@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    scroll-behavior: smooth
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ecefee;
+}
+
+.new-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0b3622;
+    background-color: #d1e7de;
+    height: 2em;
+    border: 1px solid #2ab172;
+    border-radius: 0.5em;
+
+}
+
+header img {
+    width: 25em;
+}
+
+.header-logo {
+    display: flex;
+    margin: 2em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+
+/* nav list background */
+.nav-li {
+    background-color: black;
+    width: 90vw;
+    min-height: 3rem;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    min-height: 3rem;
+    margin: 3em 0;
+
+}
+
+nav ul li {
+    margin: 0 6em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(232, 240, 248);
+    font-size: 1.3em;
+}
+
+nav ul li a:hover {
+    font-size: 1.5em;
+    color: rgb(193, 226, 255);
+    transition: all 0.4s;
+}
+
+.promotion-img img {
+    width: 90vw;
+    height: 30em;
+    border-radius: 1rem;
+    opacity: 90%;
+}
+
+
+.promotion {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 7em;
+}
+
+.promotion-heading h2 {
+    position: absolute;
+    margin-top: 1em;
+    left: 7%;
+    color: rgb(255, 248, 248);
+    font-size: 1.9em;
+    text-shadow: 3px 4px 4px rgba(0, 0, 0, 1);
+
+}
+
+.promotion-desc p {
+    position: absolute;
+    margin-top: 18em;
+    left: 7%;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: white;
+    font-size: 1.2em;
+    text-shadow: 3px 4px 3px rgba(0, 0, 0, 1), -2px -1px 18px rgb(0, 0, 0);
+}
+
+.card-img img {
+    width: 20em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* Align items at the start */
+    width: 92vw;
+    margin: 0 auto;
+    /* Center the container horizontally */
+    margin-top: 4em;
+    /* Adjust the top margin as needed */
+    margin-bottom: 7em;
+    /* Adjust the bottom margin as needed */
+    flex-wrap: wrap;
+    gap: 5em 0;
+}
+
+.card {
+    background-color: #f3e4d598;
+    width: 30em;
+    margin: 0 1rem;
+    /* Adjust the horizontal spacing between cards */
+    border-radius: 1em;
+    flex: 1;
+    height: 50em;
+}
+
+.card-heading {
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.card-img {
+    padding: 0 2em;
+}
+
+.card-desc p {
+    padding: 2em;
+    font-size: 1.2em;
+    width: 74%;
+}
+
+.card-desc ul {
+    padding-left: 4em;
+    font-size: 1.2em;
+    width: 74%;
+}
+
+.card-btn {
+    position: absolute;
+    padding: 2em;
+}
+
+.card-btn button {
+    background-color: #0c1b2a;
+    width: 9em;
+    height: 4em;
+    color: #ecefee;
+    font-size: 1.1em;
+}
+
+.card-btn button:hover {
+    transform: scale(1.25) translate(6%, 0);
+    transition: all 0.5s;
+    color: rgb(187, 247, 247);
+}
+
+.card-btn button:active {
+    transform: scale(.75);
+}
+
+
+
+.footer-line {
+    border-top: 1px solid black;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    margin-top: 3rem;
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.footer-logo img {
+    width: 5em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    margin-left: 2em;
+    width: 80%;
+    color: #afadad;
+}
+
+#diversity {
+    width: 17rem;
+}
+
+@media screen and (max-width:768px) {
+    header img {
+        width: 17.77em;
+    }
+
+    .promotion-img img {
+        height: 24.66em;
+        margin-top: 4em;
+    }
+
+    .promotion-heading h2 {
+        margin-top: 4em;
+        font-size: 1.56em;
+    }
+
+    .promotion-desc p {
+        font-size: .986em;
+        margin-top: 22em;
+    }
+
+    .card-container {
+
+        justify-content: center;
+    }
+
+    .card-img img {
+        width: 16.446em;
+    }
+
+    .card {
+        background-color: #f3e4d598;
+        width: 24.669em;
+        margin: 0 1rem;
+        /* Adjust the horizontal spacing between cards */
+        border-radius: 1em;
+        flex: 1;
+        height: 41.115em;
+    }
+
+    .card-heading {
+        font-size: .986em;
+    }
+
+    .card-desc p {
+        font-size: .986em;
+    }
+
+    .card-desc ul {
+        font-size: .986em;
+    }
+
+    .card-btn button {
+        width: 7.4em;
+        height: 3.2em;
+        font-size: .9em;
+    }
+
+    .footer-logo img {
+        width: 4.11em;
+    }
+}
+
+@media screen and (max-width:1114px) {
+    .card-container {
+        justify-content: center;
+    }
+}
