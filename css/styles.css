@@ -23,7 +23,7 @@ body {
     height: 2em;
     border: 1px solid #2ab172;
     border-radius: 0.5em;
-
+    width: 100vw;
 }
 
 header img {
@@ -106,7 +106,7 @@ nav ul li a:hover {
 
 .promotion-desc p {
     position: absolute;
-    margin-top: 18em;
+    margin-top: 15em;
     left: 7%;
     max-width: 80%;
     word-wrap: break-word;
@@ -123,14 +123,10 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    /* Align items at the start */
     width: 92vw;
     margin: 0 auto;
-    /* Center the container horizontally */
     margin-top: 4em;
-    /* Adjust the top margin as needed */
     margin-bottom: 7em;
-    /* Adjust the bottom margin as needed */
     flex-wrap: wrap;
     gap: 5em 0;
 }
@@ -139,7 +135,6 @@ nav ul li a:hover {
     background-color: #f3e4d598;
     width: 30em;
     margin: 0 1rem;
-    /* Adjust the horizontal spacing between cards */
     border-radius: 1em;
     flex: 1;
     height: 50em;
@@ -167,7 +162,7 @@ nav ul li a:hover {
 }
 
 .card-btn {
-    position: absolute;
+
     padding: 2em;
 }
 
@@ -225,6 +220,12 @@ nav ul li a:hover {
     header img {
         width: 17.77em;
     }
+    nav ul li {
+        margin: 1em 6em;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
 
     .promotion-img img {
         height: 24.66em;
@@ -281,10 +282,123 @@ nav ul li a:hover {
     .footer-logo img {
         width: 4.11em;
     }
+
+    #diversity {
+        width: 13rem;
+    }
 }
 
+/* aligning the cards to the center on the breakpoint */
 @media screen and (max-width:1114px) {
     .card-container {
         justify-content: center;
     }
+
+
+}
+
+@media screen and (max-width:630px) {
+    header img {
+        width: 17.77em;
+    }
+
+    .promotion-img img {
+        height: 19.72em;
+        margin-top: 4em;
+    }
+
+    .promotion-heading h2 {
+        margin-top: 4em;
+        font-size: 1.24em;
+    }
+
+    .promotion-desc p {
+        font-size: .788em;
+        margin-top: 22em;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .new-info {
+        font-size: 0.9em;
+    }
+
+    header img {
+        width: 11.11em;
+    }
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .promotion-img img {
+        height: 15.41em;
+        margin-top: 2.50em;
+    }
+
+    .promotion-heading h2 {
+
+        font-size: 0.98em;
+    }
+
+    .promotion-desc p {
+        font-size: 0.62em;
+
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .card-img img {
+        width: 10.28em;
+    }
+
+    .card {
+        background-color: #f3e4d598;
+        width: 18.50em;
+        margin: 0 1rem;
+        border-radius: 0.63em;
+        flex: 1;
+        height: 34em;
+    }
+
+    .card-heading {
+        font-size: .9em;
+    }
+
+    .card-desc p {
+        font-size: .9em;
+    }
+
+    .card-desc ul {
+        font-size: 0.9em;
+    }
+
+    .card-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+
+    }
+
+    .card-btn button {
+        width: 7em;
+        height: 2.9em;
+        font-size: .9em;
+
+    }
+
+    .footer-copyright {
+        font-size: 0.8em;
+    }
+
+    .footer-logo img {
+        width: 2.57em;
+    }
+
+    #diversity {
+        width: 7rem;
+    }
+
 }
